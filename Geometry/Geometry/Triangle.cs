@@ -45,7 +45,9 @@ namespace Geometry
         }
         public void CalcArea()
         {
-            Console.WriteLine("S = " + A * B * C);
+            var P = (a + b + c) / 2;
+            double S = Math.Sqrt(P * (P - a) * (P - b) * (P - c));
+            Console.WriteLine("S = " + S);
         }
 
     }
